@@ -19,3 +19,15 @@ CREATE DATABASE <name>
 CREATE DATABASE <snake_case>
 CREATE DATABASE <camelCase>
 ```
+
+## delete datatabse
+
+```sql
+ DROP DATABASE <name>
+```
+
+## use database (crud)
+
+```sql
+ USE <database>
+```
