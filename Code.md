@@ -11,3 +11,11 @@
 ```sql
 show databases;
 ```
+
+## create new database
+
+```sql
+CREATE DATABASE <name>
+CREATE DATABASE <snake_case>
+CREATE DATABASE <camelCase>
+```
