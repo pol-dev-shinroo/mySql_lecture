@@ -1,0 +1,29 @@
+# What is SQL
+
+- stands for Structured Query Language
+- SQL is the language we use to "talk" to our DB
+
+## Examples:
+
+- Final all users
+- Find all users who are 18 years old
+- Add a new user with username "asdf"
+- Delete Every single user
+
+```sql
+ SELECT * FROM Users WHERE Age >=18;
+```
+
+# Working with MySQL is primarily writing SQL
+
+![image](https://user-images.githubusercontent.com/102004753/225849089-f212aa50-b2f0-4419-9a7f-da47144589b4.png)
+
+## Hence, different databases use SQL
+
+=> SQL is thus a standard language shared among different DBMSs.
+![image](https://user-images.githubusercontent.com/102004753/225849767-b3676b54-aefd-426b-b48d-e96ff5c093c5.png)
+
+## Takeaways
+
+- Once you learn SQL, its pretty easy to switch to another DB that uses SQL
+- What makes each Databses (DBMS) unique, are the features they offer, not the language
