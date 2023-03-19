@@ -23,11 +23,25 @@
  books; */
 /* *************************************************** */
 /* 2. order by */
-select
+/* select
  author_fname,
  author_lname,
  released_year
-from
+ from
  books
-order by
- released_year desc;
+ order by
+ 1,
+ 3 desc; */
+/* *************************************************** */
+/* 3. limit */
+/* select
+ author_fname,
+ author_lname,
+ pages,
+ released_year
+ from
+ books
+ order by
+ 4 desc
+ limit
+ 1, 5; */
