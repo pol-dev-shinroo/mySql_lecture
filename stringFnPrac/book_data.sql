@@ -62,3 +62,22 @@
  title
  from
  books; */
+/* ************************************************* */
+/* 5. upper and lower */
+/* select
+ upper("hello world") as upper
+ from
+ books;
+ 
+ select
+ lower("HELLO WORLD") as upper
+ from
+ books; */
+/* select
+ upper(title) as upper
+ from
+ books; */
+/* select
+ concat(upper("my favorite books is "), upper(title)) as my_favorite
+ from
+ books */
