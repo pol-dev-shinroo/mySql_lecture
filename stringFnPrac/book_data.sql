@@ -48,10 +48,17 @@
  books; */
 /* ************************************************* */
 /* 4. reverse */
-select
-	/* reverse("chicken nucket");
-	 
-	 select
-	 reverse(title) as reverse
-	 from
-	 books; */
+/* select */
+/* reverse("chicken nucket");
+ 
+ select
+ reverse(title) as reverse
+ from
+ books; */
+/* ************************************************* */
+/* 5. char length */
+/* select
+ CHAR_LENGTH(title) as char_length,
+ title
+ from
+ books; */
