@@ -23,3 +23,23 @@
  books
  where
  title like '%the%' */
+/* ************************************************* */
+/* 2. group by */
+/* select
+ author_lname,
+ count(*) as books_written
+ from
+ books
+ GROUP BY
+ author_lname
+ order by
+ books_written desc; */
+/* select
+ author_lname,
+ released_year,
+ count(*)
+ from
+ books
+ group by
+ author_lname,
+ released_year; */
