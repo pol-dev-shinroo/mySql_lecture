@@ -90,3 +90,17 @@
  author_lname
  order by
  count desc */
+/* ************************************************* */
+/* 6. combining group by with min and max */
+select
+ author_fname,
+ author_lname,
+ min(released_year) as first_book,
+ max(released_year) as last_book,
+ count(*) as total_books,
+ max(pages) as longest_pages
+from
+ books
+group by
+ author_fname,
+ author_lname;
