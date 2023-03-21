@@ -43,3 +43,13 @@
  group by
  author_lname,
  released_year; */
+/* ************************************************* */
+/* 3. min and max */
+/* select
+ min(released_year)
+ from
+ books; */
+/* select
+ max(pages)
+ from
+ books; */
