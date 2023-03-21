@@ -20,3 +20,24 @@
  values
  (123123.12123); */
 /* show warnings; */
+/* ****************************** */
+/* 4. date, time, datetime, curdate, current_time, now */
+/* drop table parent;
+ create table parent (birthdate date, birthtime time, birthdt datetime); */
+/* select
+ curdate(); */
+/* select
+ current_time; */
+/* select
+ now(); */
+/* insert into
+ parent (name, birthdate, birthtime, birthdt)
+ values
+ (
+ upper("peter"),
+ curdate(),
+ current_time(),
+ now()
+ ); */
+/* ****************************** */
+/* 5. date functions */
