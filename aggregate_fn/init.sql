@@ -92,15 +92,27 @@
  count desc */
 /* ************************************************* */
 /* 6. combining group by with min and max */
-select
+/* select
  author_fname,
  author_lname,
  min(released_year) as first_book,
  max(released_year) as last_book,
  count(*) as total_books,
  max(pages) as longest_pages
+ from
+ books
+ group by
+ author_fname,
+ author_lname; */
+/* ************************************************* */
+/* 7. sum */
+select
+ author_fname,
+ author_lname,
+ sum(pages) as total_pages,
+ count(*) as books_count
 from
  books
-group by
+GROUP BY
  author_fname,
- author_lname;
+ author_lname
