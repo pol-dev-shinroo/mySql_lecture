@@ -60,3 +60,23 @@
  date_format(birthdate, '%c')
  from
  parent; */
+/* ****************************** */
+/* 7. date maths */
+/* select
+ birthdate,
+ datediff(curdate(), birthdate)
+ from
+ parent; */
+/* select
+ date_add(curdate(), interval 1 year); */
+/* select
+ date_add(curdate(), interval 1 month); */
+/* select
+ date_sub(curdate(), interval 9 year); */
+/* select
+ now() - interval 27 year; */
+/* select
+ birthdate,
+ year(birthdate + interval 10 year)
+ from
+ parent; */
