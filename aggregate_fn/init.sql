@@ -106,13 +106,25 @@
  author_lname; */
 /* ************************************************* */
 /* 7. sum */
-select
+/* select
  author_fname,
  author_lname,
  sum(pages) as total_pages,
  count(*) as books_count
+ from
+ books
+ GROUP BY
+ author_fname,
+ author_lname */
+/* ************************************************* */
+/* 8. average */
+select
+ released_year,
+ count(*) as total_books_in_a_year,
+ avg(stock_quantity)
 from
  books
-GROUP BY
- author_fname,
- author_lname
+group by
+ released_year
+order by
+ released_year;
