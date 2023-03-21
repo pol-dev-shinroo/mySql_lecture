@@ -41,7 +41,7 @@
  ); */
 /* ****************************** */
 /* 5. date functions */
-select
+/* select
  birthdate,
  day(birthdate),
  dayofweek(birthdate),
@@ -50,5 +50,13 @@ select
  dayname(birthdate),
  hour(birthdate),
  second(birthdate)
-from
- parent;
+ from
+ parent; */
+/* ****************************** */
+/* 6. date formatting (using specifier) */
+/* select
+ date_format(birthdate, '%a'),
+ date_format(birthdate, '%b'),
+ date_format(birthdate, '%c')
+ from
+ parent; */
