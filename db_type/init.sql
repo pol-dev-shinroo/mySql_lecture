@@ -41,3 +41,14 @@
  ); */
 /* ****************************** */
 /* 5. date functions */
+select
+ birthdate,
+ day(birthdate),
+ dayofweek(birthdate),
+ dayofyear(birthdate),
+ monthname(birthdate),
+ dayname(birthdate),
+ hour(birthdate),
+ second(birthdate)
+from
+ parent;
