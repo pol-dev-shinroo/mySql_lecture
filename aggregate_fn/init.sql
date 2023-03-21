@@ -118,13 +118,75 @@
  author_lname */
 /* ************************************************* */
 /* 8. average */
-select
+/* select
  released_year,
  count(*) as total_books_in_a_year,
- avg(stock_quantity)
-from
+ avg(stock_quantity),
+ std(stock_quantity)
+ from
  books
-group by
+ group by
  released_year
-order by
- released_year;
+ order by
+ released_year; */
+/* ************************************************* */
+/* 9. exercise */
+/* print the numbers of books in the db */
+/* select
+ count(*) as total_books
+ from
+ books
+ where
+ title is not null; */
+/* print out how many books were relased in each year */
+/* select
+ released_year,
+ count(*) as total_books
+ from
+ books
+ group by
+ released_year; */
+/* print out the total number of books in stock */
+/* select
+ stock_quantity,
+ count(*) as books
+ from
+ books
+ group by
+ stock_quantity; */
+/* find the average released_year for each author */
+/* select
+ author_fname,
+ author_lname,
+ avg(released_year) as avg_released_year
+ from
+ books
+ group by
+ author_fname,
+ author_lname; */
+/* find the full name of the author who wrote the longest book */
+/* select
+ concat(author_lname, ' ', author_fname),
+ pages
+ from
+ books
+ where
+ pages = (
+ select
+ max(pages)
+ from
+ books
+ ); */
+/* group by year and return no of books and avg pages */
+/* select
+ released_year,
+ count(*) as no_books,
+ avg(pages) as avg_pages
+ from
+ books
+ where
+ title is not null
+ group by
+ released_year
+ order by
+ released_year */
