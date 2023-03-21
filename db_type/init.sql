@@ -7,3 +7,7 @@
  ("C"); */
 /* CHAR is faster for fixed length text */
 /* Otherwise use VARCHAR */
+/* ****************************** */
+/* 2. int, tinyint, bigint */
+/* the range differs among them, check the documentation */
+/* create table parent (children tinyint unsigned); */
