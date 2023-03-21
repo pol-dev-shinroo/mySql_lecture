@@ -80,3 +80,23 @@
  year(birthdate + interval 10 year)
  from
  parent; */
+/* ****************************** */
+/* 8. timestamp */
+/* timestamp is date + time */
+/* difference between timestamp and datetime is that timestamp takes less memory (smaller range) = trend */
+/* create table parent (
+ text varchar(200),
+ created_at timestamp default current_timestamp
+ ); */
+/* insert into
+ parent (text)
+ values
+ ("hello"); */
+/* alter table
+ parent
+ add
+ column updated_at timestamp on update current_timestamp; */
+/* update
+ parent
+ set
+ text = "updated"; */
