@@ -45,3 +45,26 @@
  4 desc
  limit
  1, 5; */
+/* *************************************************** */
+/* 4. like */
+/* select
+ author_fname,
+ author_lname
+ from
+ books
+ where
+ author_fname like '%da%' */
+/* select
+ author_fname,
+ author_lname
+ from
+ books
+ where
+ author_fname like '%' */
+/* select
+ author_fname,
+ author_lname
+ from
+ books
+ where
+ author_fname like '_____' */
