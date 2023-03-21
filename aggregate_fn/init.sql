@@ -53,3 +53,18 @@
  max(pages)
  from
  books; */
+/* ************************************************* */
+/* 4. subquery */
+/* select
+ title,
+ released_year
+ from
+ books
+ where
+ title is not null
+ and released_year = (
+ select
+ max(released_year)
+ from
+ books
+ ) */
