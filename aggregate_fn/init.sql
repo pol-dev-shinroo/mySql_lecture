@@ -68,3 +68,25 @@
  from
  books
  ) */
+/* ************************************************* */
+/* 5. multiple group by */
+/* select
+ author_fname,
+ author_lname,
+ count(*) as count
+ from
+ books
+ group by
+ author_fname,
+ author_lname
+ order by
+ count desc */
+/* select
+ author_lname,
+ count(*) as count
+ from
+ books
+ group by
+ author_lname
+ order by
+ count desc */
