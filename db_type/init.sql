@@ -100,3 +100,15 @@
  parent
  set
  text = "updated"; */
+/* ****************************** */
+/* 9. exercise */
+/* create table inventory (
+ item_name varchar(20),
+ price int unsigned default 0,
+ quantity mediumint unsigned default 0
+ ); */
+/* create table tweets(
+ content varchar(200),
+ username varchar(30),
+ created_at timestamp default now()
+ ) */
