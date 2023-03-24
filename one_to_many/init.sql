@@ -63,4 +63,14 @@
  customers
  inner join orders on orders.customer_id = customers.id; */
 /* ********************************* */
-/* 3. left joins (교집합) */
+/* 3. inner join with group by */
+/* select
+ first_name,
+ last_name,
+ sum(amount)
+ from
+ customers
+ join orders on customers.id = orders.customer_id
+ group by
+ first_name,
+ last_name; */
