@@ -107,3 +107,9 @@
  FROM
  customers
  RIGHT JOIN orders ON customers.id = orders.customer_id; */
+/* ********************************* */
+/* 5. on delete cascade (automatically deletes order when customer is deleted) */
+/* ALTER TABLE
+ orders
+ ADD
+ CONSTRAINT customer_id FOREIGN KEY (customer_id) REFERENCES customers (id) ON DELETE CASCADE; */
