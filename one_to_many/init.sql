@@ -90,3 +90,20 @@
  last_name
  order by
  3 desc; */
+/* SELECT
+ first_name,
+ last_name,
+ order_date,
+ amount
+ FROM
+ customers
+ Left JOIN orders ON customers.id = orders.customer_id;
+ 
+ SELECT
+ first_name,
+ last_name,
+ order_date,
+ amount
+ FROM
+ customers
+ RIGHT JOIN orders ON customers.id = orders.customer_id; */
