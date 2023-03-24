@@ -67,10 +67,12 @@
 /* select
  first_name,
  last_name,
- sum(amount)
+ sum(amount) as total
  from
  customers
  join orders on customers.id = orders.customer_id
  group by
  first_name,
- last_name; */
+ last_name
+ order by
+ total desc; */
