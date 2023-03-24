@@ -76,3 +76,17 @@
  last_name
  order by
  total desc; */
+/* ********************************* */
+/* 4. left / right join (교집합을 포함한 A 또는 B전체 => 순수 A는 null이 나오겠쥬?) */
+/* select
+ first_name,
+ last_name,
+ sum(amount) as total
+ from
+ customers
+ left join orders on orders.customer_id = customers.id
+ group by
+ first_name,
+ last_name
+ order by
+ 3 desc; */
