@@ -50,3 +50,45 @@
  sale_price INT NOT NULL,
  CONSTRAINT sprice_gt_pprice CHECK(sale_price >= purchase_price)
  ); */
+/* ****************************** */
+/* 4. alter (add) */
+/* ALTER TABLE
+ companies
+ ADD
+ COLUMN phone VARCHAR(15);
+ 
+ ALTER TABLE
+ companies
+ ADD
+ COLUMN employee_count INT NOT NULL DEFAULT 1; */
+/* ****************************** */
+/* 4. alter (delete/drop) */
+/* ALTER TABLE
+ companies DROP COLUMN phone; */
+/* ****************************** */
+/* 4. alter (rename) */
+/* RENAME TABLE companies to suppliers;
+ 
+ ALTER TABLE
+ suppliers RENAME TO companies;
+ 
+ ALTER TABLE
+ companies RENAME COLUMN name TO company_name; */
+/* ****************************** */
+/* 4. alter (modify vs change (column name + data type)) */
+/* ALTER TABLE
+ companies
+ MODIFY
+ company_name VARCHAR(100) DEFAULT 'unknown';
+ 
+ ALTER TABLE
+ suppliers CHANGE business biz_name VARCHAR(50); */
+/* ****************************** */
+/* 4. alter (add and drop constraint) */
+/* ALTER TABLE
+ houses
+ ADD
+ CONSTRAINT positive_pprice CHECK (purchase_price >= 0);
+ 
+ ALTER TABLE
+ houses DROP CONSTRAINT positive_pprice; */
